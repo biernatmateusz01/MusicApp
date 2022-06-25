@@ -7,7 +7,7 @@
       @change-results="changeResults"
     />
     <AllSongs :all-songs="songs" />
-    <BaseFooter/>
+    <BaseFooter />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import BaseBanner from "../components/BaseBanner.vue";
 import TopList from "../components/TopList.vue";
 import SpecialsSongs from "../components/SpecialsSongs.vue";
 import AllSongs from "../components/AllSongs.vue";
-import BaseFooter from "../components/BaseFooter.vue"
+import BaseFooter from "../components/BaseFooter.vue";
 
 export default {
   name: "HomeView",
@@ -25,7 +25,7 @@ export default {
     TopList,
     SpecialsSongs,
     AllSongs,
-    BaseFooter
+    BaseFooter,
   },
   data() {
     return {
@@ -421,6 +421,13 @@ export default {
           title: "W płomieniach",
           link: "https://www.youtube.com/watch?v=ZxsaYVNkosQ",
           img: "https://i.ytimg.com/vi/ZxsaYVNkosQ/maxresdefault.jpg",
+        },
+        {
+          id: 57,
+          authorName: "bryska",
+          title: "mam kogoś lepszego",
+          link: "https://www.youtube.com/watch?v=iepelRHBIrI",
+          img: "https://cdn.galleries.smcloud.net/t/galleries/gf-oJ3j-GBCf-dZJz_bryska-plyta-moja-ciemnosc-5-mocnych-powodow-zeby-czekac-na-ten-album-1920x1080-nocrop.jpg",
         },
       ],
       top5: [
@@ -852,6 +859,13 @@ export default {
           title: "W płomieniach",
           link: "https://www.youtube.com/watch?v=ZxsaYVNkosQ",
           img: "https://i.ytimg.com/vi/ZxsaYVNkosQ/maxresdefault.jpg",
+        },
+        {
+          id: 57,
+          authorName: "bryska",
+          title: "mam kogoś lepszego",
+          link: "https://www.youtube.com/watch?v=iepelRHBIrI",
+          img: "https://cdn.galleries.smcloud.net/t/galleries/gf-oJ3j-GBCf-dZJz_bryska-plyta-moja-ciemnosc-5-mocnych-powodow-zeby-czekac-na-ten-album-1920x1080-nocrop.jpg",
         },
       ],
     };
