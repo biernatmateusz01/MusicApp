@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-prev,.swiper-button-next{
+    color: #66bb6a;
+}
+.swiper-button-prev,.swiper-button-next:hover{
+    color: #2beb34;
+}
