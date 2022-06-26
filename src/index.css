@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 .swiper-button-prev,.swiper-button-next{
-    color: #0080ff;
+    color: #66bb6a;
 }
 .swiper-button-prev,.swiper-button-next:hover{
-    color: #0c40cd;
+    color: #2beb34;
 }
-
