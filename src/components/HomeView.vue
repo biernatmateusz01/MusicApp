@@ -1,13 +1,18 @@
 <template>
-  <div class="min-h-screen overflow-x-hidden text-white bg-black-bg">
-    <BaseBanner />
-    <TopList :top5="top5" />
-    <SpecialsSongs
-      :special-songs="specialSongs"
-      @change-results="changeResults"
-    />
-    <AllSongs :all-songs="songs" />
-    <BaseFooter />
+  <div class="relative">
+    <div
+      @click="openInfs()"
+      class="min-h-screen relative overflow-x-hidden text-white bg-black-bg"
+    >
+      <BaseBanner />
+      <TopList :top5="top5" />
+      <SpecialsSongs
+        :special-songs="specialSongs"
+      />
+      <AllSongs :all-songs="songs" @click="openInfs" />
+      <BaseFooter />
+    </div>
+    <MoreInfsView @click="closeInfs()" v-if="isOpen" />
   </div>
 </template>
 
@@ -17,6 +22,7 @@ import TopList from "../components/TopList.vue";
 import SpecialsSongs from "../components/SpecialsSongs.vue";
 import AllSongs from "../components/AllSongs.vue";
 import BaseFooter from "../components/BaseFooter.vue";
+import MoreInfsView from "../components/MoreInfsView.vue";
 
 export default {
   name: "HomeView",
@@ -26,9 +32,11 @@ export default {
     SpecialsSongs,
     AllSongs,
     BaseFooter,
+    MoreInfsView,
   },
   data() {
     return {
+      isOpen: false,
       songs: [
         {
           id: 1,
@@ -36,6 +44,8 @@ export default {
           title: "Cześć jak się masz?",
           img: "https://i1.sndcdn.com/artworks-zDoAtP7SQS8ln4gJ-2wHwaw-t500x500.jpg",
           link: "https://www.youtube.com/watch?v=DnePdjIA0wk",
+          moreInfs:
+            "singel polskiego piosenkarza Sobla oraz polskiej piosenkarki Sanah. Utwór pochodzi z albumów Pułapka na motyle w wersji platynowej oraz Irenka w wersji finalnej. Singel został wydany 11 października 2021.",
         },
         {
           id: 2,
@@ -43,6 +53,8 @@ export default {
           title: "Proste",
           img: "https://i.ytimg.com/vi/s7lpTdRMPn4/maxresdefault.jpg",
           link: "https://www.youtube.com/watch?v=s7lpTdRMPn4",
+          moreInfs:
+            "„Proste” to piosenka o tych, którzy są już zmęczeni przelotnymi znajomościami bez uczucia i jakiejkolwiek emocji. Chęć posiadania mocnej więzi z drugim człowiekiem wygrywa już ze spontanicznymi chwilami, które pozornie przynoszą szczęście, a tak naprawdę pokazują nam, jak bardzo nie potrafimy w miłość.",
         },
         {
           id: 3,
@@ -50,6 +62,8 @@ export default {
           title: "Fiołkowe Pole",
           img: "https://i.ytimg.com/vi/_2b9ZnNlbaI/maxresdefault.jpg",
           link: "https://www.youtube.com/watch?v=Od-8AwX_rCk",
+          moreInfs:
+            "gitarowa ballada pochodząca z debiutanckiej płyty polskiego piosenkarza Sobla zatytułowanej Pułapka na motyle. Utwór został wydany 13 kwietnia 2021 nakładem wytwórni Def Jam Recordings Poland jako czwarty singiel z albumu. Twórcą tekstu jest Sobel, natomiast muzykę skomponował Piotrek Lewandowski.",
         },
         {
           id: 4,
@@ -57,6 +71,8 @@ export default {
           title: "Nocny Express",
           img: "https://kulturalnemedia.pl/wp-content/uploads/2022/01/lanberry-nocny-express-3000x3000-1-scaled.jpg",
           link: "https://www.youtube.com/watch?v=IP7fITuu02o",
+          moreInfs:
+            "Nocny Express to pierwszy singiel artystki, który wprowadza nas w klimat jej nowej płyty. Album ukaże się na przełomie roku 2022 i 2023. Lanberry twierdzi, że w muzyce pop można mieszać wiele wpływów. - Tak jak często w mojej twórczości, to opowieść o relacjach.",
         },
         {
           id: 5,
@@ -64,6 +80,7 @@ export default {
           title: "Za krótki sen",
           img: "https://djpromotion.com.pl/djraport/wp-content/uploads/2021/04/daria-zawialow-za-krotki-sen-podsiadlo.jpg",
           link: "https://www.youtube.com/watch?v=xagIRaOFfS0",
+          moreInfs: "",
         },
         {
           id: 6,
@@ -71,6 +88,8 @@ export default {
           title: "Złoto",
           img: "https://d-art.ppstatic.pl/kadry/k/r/1/06/07/60abb784542fb_o_full.jpg",
           link: "https://www.youtube.com/watch?v=mr4_R3qrKEc",
+          moreInfs:
+            "W swoim najnowszym singlu „Złoto” Mrozu wraca do pierwszej połowy lat 90., czasu beztroski, swobody i przyjemnej ekscytacji związanej z tym, co przyniesie przyszłość. Piosenka narodziła się po dotarciu trzech kumpli do górskiej chaty z zapierającym dech widokiem na Jezioro Czorsztyńskie. Ze sobą zabraliśmy gitary, sprzęt studyjny i rowery. Muzyka do piosenki „Złoto” to efekt pierwszej nocy w głuszy, która wyzwoliła niesamowitą radość z grania i zapomnienie o trudnej sytuacji, która nas muzyków obecnie dotknęła - powiedział o nowym singlu Mrozu.",
         },
         {
           id: 7,
@@ -870,6 +889,7 @@ export default {
       ],
     };
   },
+
   methods: {
     changeResults(inputValue) {
       if (inputValue) {
@@ -881,6 +901,12 @@ export default {
       } else {
         this.specialSongs = [];
       }
+    },
+    openInfs() {
+      this.isOpen = true;
+    },
+    closeInfs() {
+      this.isOpen = false;
     },
   },
   mounted() {

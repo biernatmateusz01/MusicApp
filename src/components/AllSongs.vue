@@ -34,7 +34,9 @@
           :key="song.id"
           class="flex items-center justify-center"
         >
-          <SongCard :song="song" />
+          <SongCard 
+          @some-event="callback"
+          :song="song" />
         </swiper-slide>
       </swiper>
     </div>
