@@ -1,6 +1,6 @@
 <template>
   <div
-    @click="$emit('get-my-song', 'xd')"
+    @click="$emit('get-all-infs', this.song)"
     class="flex flex-col cursor-pointer"
   >
     <a
@@ -16,7 +16,7 @@
 </template>
 <script>
 export default {
-  emits:['get-my-song'],
+  emits:['get-all-infs'],
   props: {
     song: {
       type: Object,

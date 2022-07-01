@@ -1,5 +1,6 @@
 <template>
   <div
+    @click="$emit('send-all-infs', this.getAllInfs)"
     style="box-shadow: inset 0 0 1em #242020"
     class="flex flex-col items-center justify-center bg-neutral-700 min-h-[200px]"
   >
@@ -12,10 +13,12 @@
           @input="$emit('change-results', inputValue)"
         />
         <div class="flex flex-wrap justify-center mt-5">
-          <SongCard 
-            v-for="song in specialSongs" 
-            :key="song.id" 
-            :song="song" />
+          <SongCard
+            v-for="song in specialSongs"
+            @get-all-infs="getAllInfs"
+            :key="song.id"
+            :song="song"
+          />
         </div>
       </div>
     </div>
@@ -26,7 +29,7 @@
 import SongCard from "./SongCard.vue";
 
 export default {
-  emits: ["change-results"],
+  emits: ["change-results", "send-all-infs"],
   components: {
     SongCard,
   },
@@ -37,8 +40,20 @@ export default {
   },
   data() {
     return {
+      allInfs: [],
       inputValue: null,
     };
+  },
+
+  methods: {
+    getAllInfs(songItem) {
+      this.allInfs = songItem;
+      console.log(songItem);
+    },
+  },
+
+  created() {
+    this.getAllInfs();
   },
 };
 </script>

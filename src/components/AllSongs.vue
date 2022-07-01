@@ -34,9 +34,11 @@
           :key="song.id"
           class="flex items-center justify-center"
         >
-          <SongCard 
-          @some-event="callback"
-          :song="song" />
+          <SongCard
+            @get-all-infs="getAllInfs"
+            @some-event="callback"
+            :song="song"
+          />
         </swiper-slide>
       </swiper>
     </div>
@@ -58,6 +60,7 @@ import "swiper/css/autoplay";
 export default {
   data() {
     return {
+      allInfs: [],
       modules: [Navigation, Autoplay],
       autoplay: {
         delay: 2000,
@@ -76,5 +79,16 @@ export default {
       type: Array,
     },
   },
+
+  methods:{
+    getAllInfs(songItem){
+      this.allInfs = songItem;
+      console.log(songItem)
+    }
+  },
+
+  created(){
+    this.getAllInfs()
+  }
 };
 </script>

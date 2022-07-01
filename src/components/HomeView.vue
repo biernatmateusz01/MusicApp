@@ -1,7 +1,6 @@
 <template>
   <div class="relative">
     <div
-      @click="openInfs()"
       class="min-h-screen relative overflow-x-hidden text-white bg-black-bg"
     >
       <BaseBanner />
@@ -12,7 +11,7 @@
       <AllSongs :all-songs="songs" @click="openInfs" />
       <BaseFooter />
     </div>
-    <MoreInfsView @click="closeInfs()" v-if="isOpen" />
+    <MoreInfsView v-if="isOpen" />
   </div>
 </template>
 
@@ -36,7 +35,7 @@ export default {
   },
   data() {
     return {
-      isOpen: false,
+      isOpen: true,
       songs: [
         {
           id: 1,
@@ -87,6 +86,7 @@ export default {
           authorName: "Mrozu",
           title: "Złoto",
           img: "https://d-art.ppstatic.pl/kadry/k/r/1/06/07/60abb784542fb_o_full.jpg",
+          secondImg: "https://d-art.ppstatic.pl/kadry/k/r/1/74/2e/60abb77f92936_o_xlarge.jpg",
           link: "https://www.youtube.com/watch?v=mr4_R3qrKEc",
           moreInfs:
             "W swoim najnowszym singlu „Złoto” Mrozu wraca do pierwszej połowy lat 90., czasu beztroski, swobody i przyjemnej ekscytacji związanej z tym, co przyniesie przyszłość. Piosenka narodziła się po dotarciu trzech kumpli do górskiej chaty z zapierającym dech widokiem na Jezioro Czorsztyńskie. Ze sobą zabraliśmy gitary, sprzęt studyjny i rowery. Muzyka do piosenki „Złoto” to efekt pierwszej nocy w głuszy, która wyzwoliła niesamowitą radość z grania i zapomnienie o trudnej sytuacji, która nas muzyków obecnie dotknęła - powiedział o nowym singlu Mrozu.",
