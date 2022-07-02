@@ -7,11 +7,12 @@
       <TopList :top5="top5" />
       <SpecialsSongs
         :special-songs="specialSongs"
+        @get-all-infs="getAllInfs"
       />
       <AllSongs :all-songs="songs" @click="openInfs" />
       <BaseFooter />
     </div>
-    <MoreInfsView v-if="isOpen" />
+    <MoreInfsView v-if="isOpen"  />
   </div>
 </template>
 
@@ -35,6 +36,7 @@ export default {
   },
   data() {
     return {
+      currentChosedCart: null,
       isOpen: true,
       songs: [
         {
@@ -908,6 +910,11 @@ export default {
     closeInfs() {
       this.isOpen = false;
     },
+    
+    getAllInfs(data) {
+      this.currentChosedCart = data;
+      console.log(data);
+    }
   },
   mounted() {
     this.changeResults("");
