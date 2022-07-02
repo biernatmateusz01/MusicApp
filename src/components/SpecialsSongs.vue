@@ -15,7 +15,7 @@
         <div class="flex flex-wrap justify-center mt-5">
           <SongCard
             v-for="song in specialSongs"
-            @get-all-infs="getAllInfs"
+            @get-all-infs="$emit('getAllInfs', $event)"
             :key="song.id"
             :song="song"
           />
@@ -29,7 +29,7 @@
 import SongCard from "./SongCard.vue";
 
 export default {
-  emits: ["change-results", "send-all-infs"],
+  emits: ["change-results", "send-all-infs", "getAllInfs"],
   components: {
     SongCard,
   },
