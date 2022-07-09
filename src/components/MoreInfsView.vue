@@ -1,29 +1,36 @@
 <template>
-  <div 
-  @get-all-infs="getMeSongInfs"
-  class="absolute top-0 right-0 z-[90] flex w-full h-full">
-    <div class="w-1/2 hidden xl:flex h-full bg-black/50 blur-xl"></div>
+  <div class="absolute top-0 right-0 z-50 flex w-full h-full">
     <div
-      class="w-full xl:w-1/2 h-full flex flex-col z-[90] bg-neutral-700 overflow-scrool"
+      @click="$emit('closeModal')"
+      class="w-1/2 hidden xl:flex h-full bg-black/50 blur-xl"
+    ></div>
+    <div
+      class="w-full xl:w-1/2 h-full flex flex-col z-50 bg-neutral-700 overflow-scrool"
     >
-      <div class="w-full h-1/5 bg-red-600">
+      <button
+        @click="$emit('closeModal')"
+        class="fixed top-5 left-5 h-8 flex items-center justify-center text-white p-4 bg-title-color rounded-lg"
+      >
+        <span>Zamknij</span>
+      </button>
+      <div class="w-full h-96">
         <img
-          :src="mySpecialSong.secondImg"
+          :src="dataModal.secondImg"
           alt="songImg"
           class="w-full h-full o object-cover bg-center"
         />
       </div>
       <div class="p-4 flex flex-col">
-        <span class="text-white text-lg font-semibold">{{ mySpecialSong.authorName }}</span>
-        <span class="text-white text-lmd mt-4"
-          >{{mySpecialSong.moreInfs}}</span
-        >
+        <span class="text-white text-lg font-semibold">{{
+          dataModal.authorName
+        }}</span>
+        <span class="text-white text-lmd mt-4">{{ dataModal.moreInfs }}</span>
       </div>
-      <div class="w-full mt-4 flex items-center justify-center">
+      <div class="w-4/5 block m-auto mt-4 items-center justify-center mb-2">
         <iframe
-          width="560"
+          width="100%"
           height="315"
-          src="https://www.youtube.com/embed/mr4_R3qrKEc"
+          :src="dataModal.link"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -36,20 +43,16 @@
 
 <script>
 export default {
-  data(){
-    return{
-      mySpecialSong: {
-        authorName: 'Mrozu',
-        moreInfs: "W swoim najnowszym singlu „Złoto” Mrozu wraca do pierwszej połowy lat 90., czasu beztroski, swobody i przyjemnej ekscytacji związanej z tym, co przyniesie przyszłość. Piosenka narodziła się po dotarciu trzech kumpli do górskiej chaty z zapierającym dech widokiem na Jezioro Czorsztyńskie. Ze sobą zabraliśmy gitary, sprzęt studyjny i rowery. Muzyka do piosenki „Złoto” to efekt pierwszej nocy w głuszy, która wyzwoliła niesamowitą radość z grania i zapomnienie o trudnej sytuacji, która nas muzyków obecnie dotknęła - powiedział o nowymsinglu Mrozu.",
-        secondImg: "https://d-art.ppstatic.pl/kadry/k/r/1/74/2e/60abb77f92936_o_xlarge.jpg",
-      }
-    }
+  emits: ["closeModal"],
+  data() {
+    return {
+      mySpecialSong: [],
+    };
   },
-  emits:['send-all-infs'],
-  methods: {
-    getMeSongInfs(song){
-      this.mySpecialSong.push(song);
-    }
+  props: {
+    dataModal: {
+      type: Object,
+    },
   },
 };
 </script>

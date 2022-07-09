@@ -17,6 +17,7 @@
 <script>
 export default {
   emits:['get-all-infs'],
+  
   props: {
     song: {
       type: Object,

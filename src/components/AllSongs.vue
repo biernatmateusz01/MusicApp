@@ -35,9 +35,8 @@
           class="flex items-center justify-center"
         >
           <SongCard
-            @get-all-infs="getAllInfs"
-            @some-event="callback"
             :song="song"
+            @get-all-infs="$emit('getAllInfs', $event)"
           />
         </swiper-slide>
       </swiper>
@@ -58,6 +57,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 export default {
+  emits: ['getAllInfs'],
   data() {
     return {
       allInfs: [],
@@ -80,15 +80,10 @@ export default {
     },
   },
 
-  methods:{
-    getAllInfs(songItem){
+  methods: {
+    getAllInfs(songItem) {
       this.allInfs = songItem;
-      console.log(songItem)
-    }
+    },
   },
-
-  created(){
-    this.getAllInfs()
-  }
 };
 </script>
