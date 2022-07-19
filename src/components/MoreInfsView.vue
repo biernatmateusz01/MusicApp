@@ -2,7 +2,7 @@
   <div class="fixed top-0 right-0 h-full flex z-50 w-full">
     <div
       @click="$emit('closeModal')"
-      class="w-1/2 hidden xl:flex bg-black/50 blur-xl"
+      class="w-1/2 hidden xl:flex bg-black/70"
     ></div>
     <div
       class="w-full h-full xl:w-1/2 flex flex-col z-50 bg-neutral-700 overflow-auto"
