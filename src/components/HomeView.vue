@@ -46,7 +46,6 @@ export default {
     return {
       isOpen: false,
       mySong: {},
-      // currentChosedCart: null,
       songs: [
         {
           id: 1,
@@ -629,6 +628,7 @@ export default {
         {
           id: 1,
           title: "“Baczyński” Pisz do mnie listy",
+          authorName: "sanah i Ania Dąbrowska",
           link: "https://www.youtube.com/watch?v=qgODpFe0pi4",
           img: "https://images.genius.com/95f7624a066701bf0f39ebf8ceb976c6.1000x1000x1.jpg",
           secondImg:
