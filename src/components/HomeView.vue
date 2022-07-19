@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="relative overflow-x-hidden text-white bg-black-bg">
+    <div class="relative overflow-x-hidden min-h-screen text-white bg-black-bg">
       <BaseBanner />
       <TopList :top5="top5" @get-all-infs="getAllInfs" />
       <SpecialsSongs
@@ -46,7 +46,7 @@ export default {
     return {
       isOpen: false,
       mySong: {},
-      currentChosedCart: null,
+      // currentChosedCart: null,
       songs: [
         {
           id: 1,
