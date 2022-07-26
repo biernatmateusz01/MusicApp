@@ -7,14 +7,33 @@
     <div
       class="w-full h-full xl:w-1/2 flex flex-col z-50 bg-neutral-700 overflow-auto"
     >
-      <div class="fixed top-5 left-5 w-full">
-        <button
-          @click="$emit('closeModal')"
-          class="h-8 flex items-center justify-center text-white p-4 bg-title-color rounded-lg"
-        >
+      <div class="fixed top-5 left-5">
+        <ButtonDefault @click="$emit('closeModal')">
           <div></div>
           <span>Zamknij</span>
-        </button>
+        </ButtonDefault>
+      </div>
+      <div @click="moreOptions = !moreOptions" class="fixed top-5 right-5">
+        <ButtonDefault isCircle class="h-8 w-8 text-lg">
+          <!--  <fa icon="fa-ellipsis-vertical" />   -->
+        </ButtonDefault>
+      </div>
+      <div
+        v-if="moreOptions"
+        class="fixed flex gap-2 p-4 flex-col rounded-lg items-center justify-center text-white bg-default-blue top-[90px] right-10"
+      >
+        <ButtonDefault
+          @click="$emit('add-to-favourite', dataModal)"
+          class="gap-2 hover:bg-blue-600 transition-all duration-200"
+        >
+          <span>Lubię to !</span>
+        </ButtonDefault>
+        <!-- <ButtonDefault
+          @click="$emit('remove-song', dataModal)"
+          class="gap-2 hover:bg-blue-600 transition-all duration-200"
+        >
+          <span>Nie podoba mi się</span>
+        </ButtonDefault> -->
       </div>
       <div class="w-full h-96">
         <img
@@ -27,7 +46,11 @@
         <span class="text-white text-lg font-semibold">{{
           dataModal.authorName
         }}</span>
-        <span class="text-white text-lmd mt-4">{{ dataModal.moreInfs }}</span>
+        <span
+          v-if="dataModal.moreInfs != ''"
+          class="text-white text-lmd mt-4"
+          >{{ dataModal.moreInfs }}</span
+        >
       </div>
       <div class="w-4/5 block m-auto mt-4 items-center justify-center mb-4">
         <iframe
@@ -45,13 +68,19 @@
 </template>
 
 <script>
+import ButtonDefault from "../components/ButtonDefault.vue";
 export default {
-  emits: ["closeModal"],
+  emits: ["closeModal", "add-to-favourite", "remove-song"],
   data() {
     return {
+      moreOptions: false,
       mySpecialSong: [],
     };
   },
+  components: {
+    ButtonDefault,
+  },
+
   props: {
     dataModal: {
       type: Object,

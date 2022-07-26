@@ -2,18 +2,25 @@
   <div class="relative">
     <div class="relative overflow-x-hidden min-h-screen text-white bg-black-bg">
       <BaseBanner />
-      <TopList :top5="top5" @get-all-infs="getAllInfs" />
+      <TopList
+        :top5="top5"
+        @get-all-infs="getAllInfs"
+        @remove-song="removeSong"
+      />
       <SpecialsSongs
         :special-songs="specialSongs"
         @change-results="changeResults"
         @get-all-infs="getAllInfs"
       />
       <AllSongs @get-all-infs="getAllInfs" :all-songs="songs" />
+      <FavourtieSongsView @remove-arr="removeArr" @sort-table="sortArr" @get-all-infs="getAllInfs" :favourite-songs="favouriteSongs" />
       <BaseFooter />
     </div>
     <MoreInfsView
       v-if="isOpen"
       @close-modal="isOpen = false"
+      @add-to-favourite="addItemToFavourite"
+      @remove-song="removeSong"
       :data-modal="mySong"
     />
   </div>
@@ -26,6 +33,7 @@ import SpecialsSongs from "../components/SpecialsSongs.vue";
 import AllSongs from "../components/AllSongs.vue";
 import BaseFooter from "../components/BaseFooter.vue";
 import MoreInfsView from "../components/MoreInfsView.vue";
+import FavourtieSongsView from "../components/FavouriteSongs.vue"
 export default {
   name: "HomeView",
 
@@ -36,6 +44,7 @@ export default {
     AllSongs,
     BaseFooter,
     MoreInfsView,
+    FavourtieSongsView
   },
 
   emits: {
@@ -270,7 +279,7 @@ export default {
           secondImg:
             "https://gfx.dlastudenta.pl/photo_new/80f/b80/c7b/3ec/1563002",
           link: "https://www.youtube.com/embed/8rjJcJYK8sU",
-          moreInfs: ``,
+          moreInfs: "",
         },
         {
           id: 23,
@@ -298,7 +307,7 @@ export default {
           title: "Jolka Jolka",
           img: "https://pik.poznan.pl/wp-content/uploads/2020/01/Budka-Suflera-koncert.jpg",
           secondImg:
-            "https://static.wikia.nocookie.net/muzyka/images/c/c6/Budka_Suflera.jpg/revision/latest?cb=20140516193651",
+            "https://goingapp.pl/storage/app/uploads/public/5d8/227/1a9/thumb_465926_600x350_0_0_crop.jpg",
           link: "https://www.youtube.com/embed/fYKfvvwsoAY",
           moreInfs: `Romans między nim, a tytułową Jolantą naprawdę miał miejsce, historia wydarzyła się late 1982 roku, krótko później powstał ten przebój. Trudno więc żeby Jolka nie pamiętała tego lata. Utwór stanowi miłosną opowieść, w której bohater piosenki opowiada o swoim gorącym, letnim romansie z Jolką właśnie.`,
         },
@@ -675,6 +684,7 @@ export default {
         },
       ],
       specialSongs: [],
+      favouriteSongs: [],
     };
   },
   methods: {
@@ -701,9 +711,26 @@ export default {
       this.mySong = data;
     },
 
-    getChosedSong(song) {
-      this.currentChosedCart = song;
+    // getChosedSong(song) {
+    //   this.currentChosedCart = song;
+    // },
+
+    addItemToFavourite(song) {
+      this.favouriteSongs.push(song);
+      // console.log(this.favouriteSongs);
     },
+    // removeSong(el) {
+    //   this.songs.splice(el.id-1, 1);
+    //   // console.log(this.songs);
+    //   this.isOpen = false;
+    //   // console.log('usuwamy' , el)
+    // },
+    removeArr(el){
+      el.length = 0;
+    },
+    // sortArr(el){
+    //   //Logika sortująca tabele po imionach artystów od A-Z
+    // }
   },
   mounted() {
     this.changeResults("");

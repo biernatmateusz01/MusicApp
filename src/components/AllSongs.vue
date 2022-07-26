@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col container my-4 mx-auto">
-    <h1 class="text-xl ml-4 text-title-color">Wszystkie utwory :</h1>
+    <HeadingDefault isBlue>Wszystkie utwory :</HeadingDefault>
     <div
       class="container relative flex flex-wrap items-center justify-center mx-auto mt-5 bg-black-bg home"
     >
@@ -11,20 +11,20 @@
         navigation
         :breakpoints="{
           '@0.00': {
-            slidesPerView: 1.5,
-            spaceBetween: 10,
+            slidesPerView: 1,
+            spaceBetween: 15,
           },
           '@0.75': {
-            slidesPerView: 2.5,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 25,
           },
           '@1.00': {
-            slidesPerView: 3.5,
-            spaceBetween: 40,
+            slidesPerView: 3,
+            spaceBetween: 25,
           },
           '@1.50': {
             slidesPerView: 4.5,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
         }"
         class="mySwiper"
@@ -46,6 +46,7 @@
 
 <script>
 import SongCard from "../components/SongCard.vue";
+import HeadingDefault from "../components/HeadingDefault.vue"
 
 //Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -73,6 +74,7 @@ export default {
     SongCard,
     Swiper,
     SwiperSlide,
+    HeadingDefault
   },
   props: {
     allSongs: {

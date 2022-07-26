@@ -11,8 +11,9 @@
           v-model="inputValue"
           @input="$emit('change-results', inputValue)"
         />
-        <div class="flex flex-wrap justify-center mt-5">
+        <div class="flex flex-wrap justify-center mt-5 gap-4">
           <SongCard
+            isSpecial
             v-for="song in specialSongs"
             :key="song.id"
             :song="song"
@@ -27,7 +28,7 @@
 <script>
 import SongCard from "./SongCard.vue";
 export default {
-  emits: ["change-results", "get-all-infs"],
+  emits: ["change-results", "getAllInfs"],
   components: {
     SongCard,
   },
