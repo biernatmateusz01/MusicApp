@@ -15,7 +15,7 @@
       </div>
       <div @click="moreOptions = !moreOptions" class="fixed top-5 right-5">
         <ButtonDefault isCircle class="h-8 w-8 text-lg">
-          <!--  <fa icon="fa-ellipsis-vertical" />   -->
+           <fa icon="fa-ellipsis-vertical" />  
         </ButtonDefault>
       </div>
       <div
