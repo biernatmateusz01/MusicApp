@@ -684,6 +684,7 @@ export default {
         },
       ],
       specialSongs: [],
+      favouriteData:[],
       favouriteSongs: [],
     };
   },
@@ -699,9 +700,11 @@ export default {
         this.specialSongs = [];
       }
     },
+
     openInfs() {
       this.isOpen = true;
     },
+
     closeInfs() {
       this.isOpen = false;
     },
@@ -716,21 +719,23 @@ export default {
     // },
 
     addItemToFavourite(song) {
-      this.favouriteSongs.push(song);
-      // console.log(this.favouriteSongs);
+      this.moreOptions = false;
+      this.favouriteData.push(song);
+      this.favouriteSongs = [...new Set(this.favouriteData)]
     },
-    // removeSong(el) {
-    //   this.songs.splice(el.id-1, 1);
-    //   // console.log(this.songs);
-    //   this.isOpen = false;
-    //   // console.log('usuwamy' , el)
-    // },
+
+    removeSong(el) {
+      console.log('usuń', el)
+      this.isOpen = false;
+    },
+
     removeArr(el){
       el.length = 0;
     },
-    // sortArr(el){
-    //   //Logika sortująca tabele po imionach artystów od A-Z
-    // }
+
+    sortArr(el){
+      //Logika sortująca tabele po imionach artystów od A-Z
+    }
   },
   mounted() {
     this.changeResults("");
