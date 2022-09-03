@@ -10,7 +10,7 @@
           >Posortuj od A-Z</ButtonDefault
         > -->
       </div>
-      <div class="flex flex-wrap  mt-5">
+      <div class="flex flex-wrap mt-5">
         <SongCard
           isSpecial
           v-for="song in favouriteSongs"
@@ -27,7 +27,7 @@ import SongCard from "../components/SongCard.vue";
 import ButtonDefault from "../components/ButtonDefault.vue";
 import HeadingDefault from "../components/HeadingDefault.vue";
 export default {
-  emits: ["remove-arr", "sort-table"],
+  emits: ["remove-arr", "sort-table", "get-all-infs"],
 
   components: {
     SongCard,

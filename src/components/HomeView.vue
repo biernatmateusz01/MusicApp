@@ -631,7 +631,7 @@ export default {
           img: "https://cdn.galleries.smcloud.net/t/galleries/gf-oJ3j-GBCf-dZJz_bryska-plyta-moja-ciemnosc-5-mocnych-powodow-zeby-czekac-na-ten-album-1920x1080-nocrop.jpg",
           secondImg: "https://i.ytimg.com/vi/iepelRHBIrI/maxresdefault.jpg",
           moreInfs: `Uważni fani wokalistki wiedzą, że popularność oryginalnej wersji „mam kogoś lepszego" wzięła się z TikToka, gdzie użytkownicy chętnie umieszczali swoje filmy z tą piosenką. Dlatego premiera klipu do jej remixu ma miejsce właśnie na tej platformie – tylko tam można zobaczyć oficjalne video do tego utworu, stworzone specjalnie z myślą o użytkownikach TikToka!`,
-        },
+        },        
       ],
       top5: [
         {

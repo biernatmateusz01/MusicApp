@@ -15,7 +15,9 @@
       </div>
       <div @click="moreOptions = !moreOptions" class="fixed top-5 right-5">
         <ButtonDefault isCircle class="h-8 w-8 text-lg">
-           <!-- <fa icon="fa-ellipsis-vertical" />   -->
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/more.png"
+          />
         </ButtonDefault>
       </div>
       <div
@@ -23,7 +25,9 @@
         class="fixed flex gap-2 p-4 flex-col rounded-lg items-center justify-center text-white bg-default-blue top-[90px] right-10"
       >
         <ButtonDefault
-          @click="$emit('add-to-favourite', dataModal), this.moreOptions = false"
+          @click="
+            $emit('add-to-favourite', dataModal), (this.moreOptions = false)
+          "
           class="gap-2 hover:bg-blue-600 transition-all duration-200"
         >
           <span>Lubię to !</span>
@@ -75,6 +79,7 @@ export default {
     return {
       moreOptions: false,
       mySpecialSong: [],
+      isFavourite: false,
     };
   },
   components: {
