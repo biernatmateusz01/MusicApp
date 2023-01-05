@@ -121,7 +121,8 @@ export default {
       el.length = 0;
     },
   },
-  mounted() {
+  created() {
+    console.log('dziala')
     this.changeResults("");
     setTimeout(() => {
       this.getMyData();
