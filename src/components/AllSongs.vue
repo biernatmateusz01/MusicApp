@@ -1,9 +1,8 @@
 <template>
   <div class="flex flex-col container my-4 mx-auto">
-    <div class="flex w-full justify-between">
-    <HeadingDefault isBlue>Wszystkie utwory :</HeadingDefault>
-    <HeadingDefault isBlue>{{allSongs.length}}</HeadingDefault>
-
+    <div class="flex w-full justify-between pr-4 lg:pr-0">
+      <HeadingDefault isBlue>Wszystkie utwory :</HeadingDefault>
+      <HeadingDefault isBlue>{{ allSongs.length }}</HeadingDefault>
     </div>
 
     <div
@@ -40,10 +39,7 @@
           :key="song.id"
           class="flex items-center justify-center"
         >
-          <SongCard
-            :song="song"
-            @get-all-infs="$emit('getAllInfs', $event)"
-          />
+          <SongCard :song="song" @get-all-infs="$emit('getAllInfs', $event)" />
         </swiper-slide>
       </swiper>
     </div>
@@ -52,7 +48,7 @@
 
 <script>
 import SongCard from "../components/SongCard.vue";
-import HeadingDefault from "../components/HeadingDefault.vue"
+import HeadingDefault from "../components/HeadingDefault.vue";
 
 //Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -64,7 +60,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 export default {
-  emits: ['getAllInfs'],
+  emits: ["getAllInfs"],
   data() {
     return {
       allInfs: [],
@@ -80,7 +76,7 @@ export default {
     SongCard,
     Swiper,
     SwiperSlide,
-    HeadingDefault
+    HeadingDefault,
   },
   props: {
     allSongs: {

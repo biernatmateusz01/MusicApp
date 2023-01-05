@@ -1,56 +1,99 @@
-{"songs": [
-  {
-    "id": 1,
-    "authorName": "Sobel, Sanah",
-    "title": "Cześć jak się masz?",
-    "img": "https://i1.sndcdn.com/artworks-zDoAtP7SQS8ln4gJ-2wHwaw-t500x500.jpg",
-    "secondImg": "https://i.ytimg.com/vi/DnePdjIA0wk/maxresdefault.jpg",
-    "link": "https://www.youtube.com/embed/DnePdjIA0wk",
-    "moreInfs":
-      "singel polskiego piosenkarza Sobla oraz polskiej piosenkarki Sanah. Utwór pochodzi z albumów Pułapka na motyle w wersji platynowej oraz Irenka w wersji finalnej. Singel został wydany 11 października 2021."
-  },
-  {
-    "id": 2,
-    "authorName": "Dawid Kwiatkowski",
-    "title": "Proste",
-    "img": "https://i.ytimg.com/vi/s7lpTdRMPn4/maxresdefault.jpg",
-    "secondImg":
-      "https://www.cgm.pl/wp-content/uploads/2021/07/Dawid-Kwiatkowski_6_fot.-Dagmara-Szewczuk-670x390.png",
-    "link": "https://www.youtube.com/embed/s7lpTdRMPn4",
-    "moreInfs":
-      "„Proste” to piosenka o tych, którzy są już zmęczeni przelotnymi znajomościami bez uczucia i jakiejkolwiek emocji. Chęć posiadania mocnej więzi z drugim człowiekiem wygrywa już ze spontanicznymi chwilami, które pozornie przynoszą szczęście, a tak naprawdę pokazują nam, jak bardzo nie potrafimy w miłość."
-  },
-  {
-    "id": 3,
-    "authorName": "Sobel",
-    "title": "Fiołkowe Pole",
-    "img": "https://i.ytimg.com/vi/_2b9ZnNlbaI/maxresdefault.jpg",
-    "secondImg": "https://i.ytimg.com/vi/1rTV7DCnF3Y/maxresdefault.jpg",
-    "link": "https://www.youtube.com/embed/1rTV7DCnF3Y",
-    "moreInfs":
-      "gitarowa ballada pochodząca z debiutanckiej płyty polskiego piosenkarza Sobla zatytułowanej Pułapka na motyle. Utwór został wydany 13 kwietnia 2021 nakładem wytwórni Def Jam Recordings Poland jako czwarty singiel z albumu. Twórcą tekstu jest Sobel, natomiast muzykę skomponował Piotrek Lewandowski."
-  },
-  {
-    "id": 4,
-    "authorName": "Lanberry",
-    "title": "Nocny Express",
-    "img": "https://kulturalnemedia.pl/wp-content/uploads/2022/01/lanberry-nocny-express-3000x3000-1-scaled.jpg",
-    "secondImg":
-      "https://cdn.galleries.smcloud.net/t/galleries/gf-1rPg-6oFq-uY5C_lanberry-i-jej-podroz-nocnym-expressem-20-sekund-teledysku-tylko-u-nas-1920x1080-nocrop.jpg",
-    "link": "https://www.youtube.com/embed/IP7fITuu02o",
-    "moreInfs":
-      "Nocny Express to pierwszy singiel artystki, który wprowadza nas w klimat jej nowej płyty. Album ukaże się na przełomie roku 2022 i 2023. Lanberry twierdzi, że w muzyce pop można mieszać wiele wpływów. - Tak jak często w mojej twórczości, to opowieść o relacjach."
-  },
-  {
-    "id": 5,
-    "authorName": "Dawid Podsiadło, Daria Zawiałow",
-    "title": "Za krótki sen",
-    "img": "https://djpromotion.com.pl/djraport/wp-content/uploads/2021/04/daria-zawialow-za-krotki-sen-podsiadlo.jpg",
-    "secondImg":
-      "https://www.rmf.fm/_files/Short_foto/625/64466c761bbc5975cb40009d79620e62.jpg",
-    "link": "https://www.youtube.com/embed/xagIRaOFfS0",
-    "moreInfs":
-      "Za krótki sen – drugi singel Darii Zawiałow i Dawida Podsiadło wydany w kwietniu 2021 zapowiadający trzeci album Wojny i noce. Piosenka dotarła do 7. miejsca na liście AirPlay, najczęściej odtwarzanych utworów w polskich stacjach radiowych."
-  }
+{
+  "songs": [
+    {
+      "id": 1,
+      "authorName": "Sobel, Sanah",
+      "title": "Cześć jak się masz?",
+      "img": "https://i1.sndcdn.com/artworks-zDoAtP7SQS8ln4gJ-2wHwaw-t500x500.jpg",
+      "secondImg": "https://i.ytimg.com/vi/DnePdjIA0wk/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/DnePdjIA0wk",
+      "moreInfs": "singel polskiego piosenkarza Sobla oraz polskiej piosenkarki Sanah. Utwór pochodzi z albumów Pułapka na motyle w wersji platynowej oraz Irenka w wersji finalnej. Singel został wydany 11 października 2021.",
+      "top5": "yes"
+    },
+    {
+      "id": 2,
+      "authorName": "Dawid Kwiatkowski",
+      "title": "Proste",
+      "img": "https://i.ytimg.com/vi/s7lpTdRMPn4/maxresdefault.jpg",
+      "secondImg": "https://www.cgm.pl/wp-content/uploads/2021/07/Dawid-Kwiatkowski_6_fot.-Dagmara-Szewczuk-670x390.png",
+      "link": "https://www.youtube.com/embed/s7lpTdRMPn4",
+      "moreInfs": "„Proste” to piosenka o tych, którzy są już zmęczeni przelotnymi znajomościami bez uczucia i jakiejkolwiek emocji. Chęć posiadania mocnej więzi z drugim człowiekiem wygrywa już ze spontanicznymi chwilami, które pozornie przynoszą szczęście, a tak naprawdę pokazują nam, jak bardzo nie potrafimy w miłość."
+    },
+    {
+      "id": 3,
+      "authorName": "Sobel",
+      "title": "Fiołkowe Pole",
+      "img": "https://i.ytimg.com/vi/_2b9ZnNlbaI/maxresdefault.jpg",
+      "secondImg": "https://i.ytimg.com/vi/1rTV7DCnF3Y/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/1rTV7DCnF3Y",
+      "moreInfs": "gitarowa ballada pochodząca z debiutanckiej płyty polskiego piosenkarza Sobla zatytułowanej Pułapka na motyle. Utwór został wydany 13 kwietnia 2021 nakładem wytwórni Def Jam Recordings Poland jako czwarty singiel z albumu. Twórcą tekstu jest Sobel, natomiast muzykę skomponował Piotrek Lewandowski.",
+      "top5": "yes"
+    },
+    {
+      "id": 4,
+      "authorName": "Lanberry",
+      "title": "Nocny Express",
+      "img": "https://kulturalnemedia.pl/wp-content/uploads/2022/01/lanberry-nocny-express-3000x3000-1-scaled.jpg",
+      "secondImg": "https://cdn.galleries.smcloud.net/t/galleries/gf-1rPg-6oFq-uY5C_lanberry-i-jej-podroz-nocnym-expressem-20-sekund-teledysku-tylko-u-nas-1920x1080-nocrop.jpg",
+      "link": "https://www.youtube.com/embed/IP7fITuu02o",
+      "moreInfs": "Nocny Express to pierwszy singiel artystki, który wprowadza nas w klimat jej nowej płyty. Album ukaże się na przełomie roku 2022 i 2023. Lanberry twierdzi, że w muzyce pop można mieszać wiele wpływów. - Tak jak często w mojej twórczości, to opowieść o relacjach.",
+      "top5": "yes"
+    },
+    {
+      "id": 5,
+      "authorName": "Dawid Podsiadło, Daria Zawiałow",
+      "title": "Za krótki sen",
+      "img": "https://djpromotion.com.pl/djraport/wp-content/uploads/2021/04/daria-zawialow-za-krotki-sen-podsiadlo.jpg",
+      "secondImg": "https://www.rmf.fm/_files/Short_foto/625/64466c761bbc5975cb40009d79620e62.jpg",
+      "link": "https://www.youtube.com/embed/xagIRaOFfS0",
+      "moreInfs": "Za krótki sen – drugi singel Darii Zawiałow i Dawida Podsiadło wydany w kwietniu 2021 zapowiadający trzeci album Wojny i noce. Piosenka dotarła do 7. miejsca na liście AirPlay, najczęściej odtwarzanych utworów w polskich stacjach radiowych."
+    },
+    {
+      "id": 6,
+      "authorName": "Mrozu",
+      "title": "Galácticos",
+      "img": "https://static.ising.pl/songs/9788/cover_640.jpg",
+      "secondImg": "https://i.ytimg.com/vi/8n3LaDrLV5I/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/8n3LaDrLV5I",
+      "moreInfs": "Galacticos to luzacki numer, który zrobiliśmy razem z Kubą Galińskim i Arkiem Sitarzem w trakcie pierwszych lockdownów w 2020 roku. W czasie, kiedy większość z nas zmuszona była siedzieć w bloku, a rzeczywistość była niepewna, tym numerem poprawialiśmy sobie humory, wspominając osiedlowe akcje. Nie byliśmy jakimiś zagorzałymi fanami Realu, ale pamiętamy czasy Galactivos, a przede wszystkim wybitnych piłkarzy z tamtej drużyny – z Ronaldo Luiz Nazario de Lima na czele. Jak grać, to inspirować się najlepszymi, czy to w sporcie czy w sztuce, ale przede wszystkim tak, by mieć z tego frajdę. - przyznał Mrozu.",
+      "top5": "yes"
+    },
+    {
+      "id": 7,
+      "authorName": "Quebonafide",
+      "title": "BUBBLETEA",
+      "img": "https://static.ising.pl/songs/9580/cover_640.jpg",
+      "secondImg": "https://i.ytimg.com/vi/IFAF3NYM_KI/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/IFAF3NYM_KI",
+      "moreInfs": "piąty singiel polskiego rapera Kuby Grabowskiego, znanego pod pseudonimem Quebonafide, z gościnnym udziałem Darii Zawiałow, promujący album zatytułowany Romantic Psycho. Wydawnictwo, w formie digital download ukazało się 1 kwietnia 2020 roku nakładem QueQuality.  Utwór wyprodukowany przez Duita został zarejestrowany w Nobocoto Studio. Jest to jego pierwszy utwór, który zaczął być emitowany w rozgłośniach mainstreamowych. Jest to efekt wcześniejszego sukcesu mainstreamowego Darii Zawiałow, która pojawiła się gościnnie w tym utworze."
+    },
+    {
+      "id": 8,
+      "authorName": "Taco Hemingway",
+      "title": "W PIĄTKI LEŻĘ W WANNIE",
+      "img": "https://images.genius.com/685795d1ab440ba7a5afbfac3725cabc.1000x1000x1.jpg",
+      "secondImg": "https://i.ytimg.com/vi/3ah4t1P9yFA/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/3ah4t1P9yFA",
+      "moreInfs": "utwór muzyczny polskiego rapera Taco Hemingwaya. Pochodzi z jego trzeciego albumu studyjnego, Pocztówka z WWA, lato ’19, wydanego 23 lipca 2019 roku nakładem Taco Corp i Asfalt Records. Gościnnie wystąpił w nim Dawid Podsiadło. Utwór W piątki leżę w wannie opisujące życie młodych ludzi, Marcin Flint stwierdza, że wokal Dawida Podsiadły to jeden z najlepszych momentów na płycie, krytyk Michał Krawczuk również go zachwala . Rafał Samborski pochwalił tekst piosenki i dodał „...że nikt z głośnych ksywek w polskim rapie tak głośno nie mówił o pułapkach w jaką wpadają mężczyźni próbujący wpisywać się w kulturę maczo."
+    },
+    {
+      "id": 9,
+      "authorName": "Taco Hemingway",
+      "title": "Następna Stacja",
+      "img": "https://i1.sndcdn.com/artworks-000233784444-ywr950-t500x500.jpg",
+      "secondImg": "https://rapowo.pl/wp-content/uploads/2021/07/c17_nyt89.jpg",
+      "link": "https://www.youtube.com/embed/TZgBIbqtDnQ",
+      "moreInfs": "Następna Stacja to utwór oparty o warszawski układ metra – Taco zabiera nas w podróż wzdłuż i wszerz Warszawy – od północy na południe i ze wschodu na zachód, każdej ze stacji obydwu linii metra poświęcając kilka wersów."
+    },
+    {
+      "id": 10,
+      "authorName": "Kizo",
+      "title": "DISNEY",
+      "img": "https://i.ytimg.com/vi/_29dLT6OMTU/maxresdefault.jpg",
+      "secondImg": "https://djpromotion.com.pl/djraport/wp-content/uploads/2021/09/kizo-disney.jpg",
+      "link": "https://www.youtube.com/embed/_29dLT6OMTU",
+      "moreInfs": "To był bit, który dostałem i od razu, kiedy go usłyszałem, pomyślałem ale hitowy bit. Ale nie miałem na niego żadnego pomysłu i sobie leżał. Ja potrzebowałem do niego natchnienia. Wracałem co jakiś czas, przez kilka dni go odpalałem, myślałem to jest zaj***te, ale nie mam pomysłu. Ten bit leżał sobie z miesiąc i ciągle do niego wracałem. Pojawił się później taki bodziec, kiedy nagle wróciłem do domu, odpaliłem go i wiem. Spędziłem fajny weekend i na koniec niedzielnego wieczoru udało mi się to stworzyć od A do Z - powiedział Kizo",
+      "top5": "yes"
+    }
   ]
 }

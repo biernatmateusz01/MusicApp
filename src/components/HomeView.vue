@@ -78,7 +78,6 @@ export default {
         this.songs = response.data.songs;
         this.loaderOpen = false;
         this.top5 = response.data.songs.filter((el) => el.top5 === "yes");
-        console.log(this.top5)
       });
     },
 

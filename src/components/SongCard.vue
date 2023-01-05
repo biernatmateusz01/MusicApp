@@ -7,7 +7,7 @@
     <a class="flex flex-col m-4 w-52 h-80">
       <img
         :src="song.img"
-        class="object-cover rounded-lg h-5/6 w-full"
+        class="object-cover  h-5/6 w-full"
         alt="SongImg"
       />
       <h2 class="mt-1 text-lg text-gray-100 truncate">
