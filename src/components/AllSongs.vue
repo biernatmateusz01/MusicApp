@@ -1,6 +1,11 @@
 <template>
   <div class="flex flex-col container my-4 mx-auto">
+    <div class="flex w-full justify-between">
     <HeadingDefault isBlue>Wszystkie utwory :</HeadingDefault>
+    <HeadingDefault isBlue>{{allSongs.length}}</HeadingDefault>
+
+    </div>
+
     <div
       class="container relative flex flex-wrap items-center justify-center mx-auto mt-5 bg-black-bg home"
     >

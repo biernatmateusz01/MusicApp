@@ -1,0 +1,56 @@
+{"songs": [
+  {
+    "id": 1,
+    "authorName": "Sobel, Sanah",
+    "title": "Cześć jak się masz?",
+    "img": "https://i1.sndcdn.com/artworks-zDoAtP7SQS8ln4gJ-2wHwaw-t500x500.jpg",
+    "secondImg": "https://i.ytimg.com/vi/DnePdjIA0wk/maxresdefault.jpg",
+    "link": "https://www.youtube.com/embed/DnePdjIA0wk",
+    "moreInfs":
+      "singel polskiego piosenkarza Sobla oraz polskiej piosenkarki Sanah. Utwór pochodzi z albumów Pułapka na motyle w wersji platynowej oraz Irenka w wersji finalnej. Singel został wydany 11 października 2021."
+  },
+  {
+    "id": 2,
+    "authorName": "Dawid Kwiatkowski",
+    "title": "Proste",
+    "img": "https://i.ytimg.com/vi/s7lpTdRMPn4/maxresdefault.jpg",
+    "secondImg":
+      "https://www.cgm.pl/wp-content/uploads/2021/07/Dawid-Kwiatkowski_6_fot.-Dagmara-Szewczuk-670x390.png",
+    "link": "https://www.youtube.com/embed/s7lpTdRMPn4",
+    "moreInfs":
+      "„Proste” to piosenka o tych, którzy są już zmęczeni przelotnymi znajomościami bez uczucia i jakiejkolwiek emocji. Chęć posiadania mocnej więzi z drugim człowiekiem wygrywa już ze spontanicznymi chwilami, które pozornie przynoszą szczęście, a tak naprawdę pokazują nam, jak bardzo nie potrafimy w miłość."
+  },
+  {
+    "id": 3,
+    "authorName": "Sobel",
+    "title": "Fiołkowe Pole",
+    "img": "https://i.ytimg.com/vi/_2b9ZnNlbaI/maxresdefault.jpg",
+    "secondImg": "https://i.ytimg.com/vi/1rTV7DCnF3Y/maxresdefault.jpg",
+    "link": "https://www.youtube.com/embed/1rTV7DCnF3Y",
+    "moreInfs":
+      "gitarowa ballada pochodząca z debiutanckiej płyty polskiego piosenkarza Sobla zatytułowanej Pułapka na motyle. Utwór został wydany 13 kwietnia 2021 nakładem wytwórni Def Jam Recordings Poland jako czwarty singiel z albumu. Twórcą tekstu jest Sobel, natomiast muzykę skomponował Piotrek Lewandowski."
+  },
+  {
+    "id": 4,
+    "authorName": "Lanberry",
+    "title": "Nocny Express",
+    "img": "https://kulturalnemedia.pl/wp-content/uploads/2022/01/lanberry-nocny-express-3000x3000-1-scaled.jpg",
+    "secondImg":
+      "https://cdn.galleries.smcloud.net/t/galleries/gf-1rPg-6oFq-uY5C_lanberry-i-jej-podroz-nocnym-expressem-20-sekund-teledysku-tylko-u-nas-1920x1080-nocrop.jpg",
+    "link": "https://www.youtube.com/embed/IP7fITuu02o",
+    "moreInfs":
+      "Nocny Express to pierwszy singiel artystki, który wprowadza nas w klimat jej nowej płyty. Album ukaże się na przełomie roku 2022 i 2023. Lanberry twierdzi, że w muzyce pop można mieszać wiele wpływów. - Tak jak często w mojej twórczości, to opowieść o relacjach."
+  },
+  {
+    "id": 5,
+    "authorName": "Dawid Podsiadło, Daria Zawiałow",
+    "title": "Za krótki sen",
+    "img": "https://djpromotion.com.pl/djraport/wp-content/uploads/2021/04/daria-zawialow-za-krotki-sen-podsiadlo.jpg",
+    "secondImg":
+      "https://www.rmf.fm/_files/Short_foto/625/64466c761bbc5975cb40009d79620e62.jpg",
+    "link": "https://www.youtube.com/embed/xagIRaOFfS0",
+    "moreInfs":
+      "Za krótki sen – drugi singel Darii Zawiałow i Dawida Podsiadło wydany w kwietniu 2021 zapowiadający trzeci album Wojny i noce. Piosenka dotarła do 7. miejsca na liście AirPlay, najczęściej odtwarzanych utworów w polskich stacjach radiowych."
+  }
+  ]
+}

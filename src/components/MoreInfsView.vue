@@ -9,7 +9,6 @@
     >
       <div class="fixed top-5 left-5">
         <ButtonDefault @click="$emit('closeModal')">
-          <div></div>
           <span>Zamknij</span>
         </ButtonDefault>
       </div>
@@ -32,16 +31,10 @@
         >
           <span>Lubię to !</span>
         </ButtonDefault>
-        <!-- <ButtonDefault
-          @click="$emit('remove-song', dataModal)"
-          class="gap-2 hover:bg-blue-600 transition-all duration-200"
-        >
-          <span>Nie podoba mi się</span>
-        </ButtonDefault> -->
       </div>
       <div class="w-full h-96">
         <img
-          :src="dataModal.secondImg"
+          :src="dataModal.img"
           alt="songImg"
           class="w-full h-full o object-cover bg-center"
         />
