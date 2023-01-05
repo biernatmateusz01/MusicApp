@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     getMyData() {
-      axios.get("../../allSongs.json").then((response) => {
+      axios.get("../../../allSongs.json").then((response) => {
         this.songs = response.data.songs;
         this.loaderOpen = false;
         this.top5 = response.data.songs.filter((el) => el.top5 === "yes");
@@ -122,11 +122,11 @@ export default {
     },
   },
   created() {
-    console.log('dziala')
-    this.changeResults("");
-    setTimeout(() => {
+    // console.log('dziala')
+    // this.changeResults("");
+    // setTimeout(() => {
       this.getMyData();
-    }, 2000);
+    // }, 2000);
   },
 };
 </script>
